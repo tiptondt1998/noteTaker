@@ -13,13 +13,9 @@ app.use(express.json());
 app.use(express.static('public'));
 // app.use('/api')
 
-
-
 app.get('/api/notes', (req, res)=>{
     res.json(notes);
 });
-
-
 
 app.post('/api/notes', (req,res)=>{
     let results = req.body;
