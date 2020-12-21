@@ -1,4 +1,8 @@
 # noteTaker
+## Screenshot
+![noteTaker](https://i.postimg.cc/t4htn13T/note-Taker.jpg)
+## Deployment Link
+http://notetaker20.herokuapp.com/
 ## Table of Contents
 * [Github](README.md/#Github)
 * [Description](README.md/#Description)
