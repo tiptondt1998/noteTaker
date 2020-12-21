@@ -106,10 +106,10 @@ const handleNewNoteView = (e) => {
 };
 
 const handleRenderSaveBtn = () => {
-  if (noteTitle.value.trim() && noteText.value.trim()) {
-    show(saveNoteBtn);
-  } else {
+  if (!noteTitle.value.trim() && !noteText.value.trim()) {
     hide(saveNoteBtn);
+  } else {
+    show(saveNoteBtn);
   }
 };
 
@@ -161,7 +161,7 @@ const renderNoteList = async (notes) => {
     noteListItems.push(li);
   });
 
-  if (window.location.pathname === './notes') {
+  if (window.location.pathname === '/notes') {
     noteListItems.forEach((note) => noteList[0].append(note));
   }
 };
